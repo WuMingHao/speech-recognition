@@ -107,7 +107,14 @@ void words_capture(int how)
 				free(word_adresses);
 			}
 			if (best < 3.5)
+			{
 				printf("%f %s", best, name);
+			}
+			else 
+			{
+				// print best choice anyway
+				printf("%f %s", best, name);
+			}
 		}
 		free(mfcc_frames);
 		free(frames);
